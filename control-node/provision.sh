@@ -15,7 +15,11 @@ sudo cat <<EOT >> /etc/sudoers
 vagrant ALL=(ALL:ALL)  NOPASSWD:ALL
 EOT
 
-ssh-keygen
+#Adicionar chave para não pedir senha no ssh
+#ssh-keygen
+#ssh-copy-id vagrant@192.168.10.3
+#ssh-copy-id vagrant@192.168.10.4
 
-ssh-copy-id vagrant@192.168.10.3
-ssh-copy-id vagrant@192.168.10.4
+#Caso não funcione executar esses dois comandos.
+# scp ~/.ssh/id_dsa.pub vagrant@db01:/home/vagrant/.ssh/
+# scp ~/.ssh/id_dsa.pub vagrant@app01:/home/vagrant/.ssh/
