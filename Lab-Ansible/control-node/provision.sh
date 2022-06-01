@@ -15,3 +15,9 @@ sudo cat <<EOT >> /etc/sudoers
 vagrant ALL=(ALL:ALL)  NOPASSWD:ALL
 EOT
 
+cat <<EOT >> /etc/ansible/hosts
+[app]
+app01
+[db]
+db01
+EOT
