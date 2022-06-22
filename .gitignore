@@ -1,0 +1,6 @@
+*.exe
+.terraform/
+.vagrant/
+*.dll
+*.pem
+*.key
