@@ -15,7 +15,7 @@ resource "aws_s3_bucket" "my-test-bucker" {
   }
 }
 
-#Criacao da AMI personalizada EC2
+#Criacao da AMI personalizada EC2 utilizando variaveis
 
 resource "aws_instance" "web" {
   ami           = var.instance_ami
